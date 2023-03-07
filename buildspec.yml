@@ -13,4 +13,6 @@ artifacts:
   files:
     - appspec.yml
     - index.html
+    - scripts/install_dependencies
+    - scripts/start_server
 
