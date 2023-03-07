@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - apt-get install -y unzip
+  build:
+    commands:
+      - echo build started `date`
+      - zip hello.zip ./index.html
+  artifacts:
+    files:
+      - appspec.yml
+      - index.html
+    name: deploy-ec2
+
