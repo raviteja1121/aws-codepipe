@@ -9,9 +9,9 @@ phases:
     commands:
       - echo build started `date`
       - zip hello.zip ./index.html
-  artifacts:
-    files:
-      - appspec.yml
-      - index.html
-    name: deploy-ec2
+artifacts:
+  files:
+    - appspec.yml
+    - index.html
+  name: deploy-ec2
 
